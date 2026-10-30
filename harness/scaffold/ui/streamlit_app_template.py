@@ -2,9 +2,9 @@
 
 복사: cp harness/scaffold/ui/streamlit_app_template.py ui/app.py
 실행: streamlit run ui/app.py --server.address 0.0.0.0 --server.port 8501 --server.headless true
-미리보기: Browser 도구에서 PORT=8501, URL=/
+확인: 브라우저(또는 미리보기 도구)에서 포트 8501, 경로 /
 
-화면 구성(SECTIONS)만 과제에 맞게 고친다. 표·그림 파일은 src/analyze.py 가 만든 것을 그대로 쓴다.
+화면 구성(SECTIONS)만 작업 내용에 맞게 고친다. 표·그림 파일은 src/analyze.py 가 만든 것을 그대로 쓴다.
 """
 import os
 

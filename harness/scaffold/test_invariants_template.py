@@ -1,5 +1,5 @@
 """불변식 테스트 템플릿.
-사용: 시험 데이터 열 이름에 맞게 상수만 바꿔 tests/test_invariants.py 로 복사한다.
+사용: 실제 데이터 열 이름에 맞게 상수만 바꿔 tests/test_invariants.py 로 복사한다.
 """
 import os
 

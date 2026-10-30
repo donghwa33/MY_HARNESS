@@ -1,9 +1,9 @@
-"""FastAPI + 정적 HTML UI 템플릿 — 과제가 API·특정 화면 동작을 요구할 때 사용.
+"""FastAPI + 정적 HTML UI 템플릿 — API·특정 화면 동작이 필요할 때 사용.
 
 복사: cp harness/scaffold/ui/fastapi_app_template.py ui/server.py
       cp -r harness/scaffold/ui/static ui/static
 실행: python -m uvicorn ui.server:app --host 0.0.0.0 --port 8000
-미리보기: Browser 도구에서 PORT=8000, URL=/
+확인: 브라우저(또는 미리보기 도구)에서 포트 8000, 경로 /
 원칙: 계산은 src/analyze.py 가 한다. 이 서버는 outputs/ 의 결과를 전달만 한다.
 """
 import os

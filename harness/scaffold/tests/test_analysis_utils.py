@@ -1,4 +1,4 @@
-"""스캐폴드 자체 테스트: 시험 시작 직후 bootstrap.sh 가 실행해 환경을 점검한다."""
+"""스캐폴드 자체 테스트: 설치 직후 bootstrap.sh 가 실행해 환경을 점검한다."""
 import numpy as np
 import pandas as pd
 import pytest
