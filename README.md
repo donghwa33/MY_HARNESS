@@ -132,5 +132,5 @@ $explain-pack
 | AGENTS.md | 작업 규칙 (작업 공간 루트로 복사) |
 | harness/skills/ | interview, decision-log, stratify-analysis, redteam, handoff, explain-pack |
 | harness/templates/ | STATE, INTERVIEW, AGREEMENT, DECISIONS, FINDINGS, EXPLAIN, REVIEW, HANDOFF, REPORT, ACTIONS, README_RUN |
-| harness/scaffold/ | analysis_utils.py (+테스트), 테스트·재현 템플릿, UI 템플릿 (Streamlit / FastAPI) |
+| harness/scaffold/ | analysis_utils.py (+테스트), 테스트·재현 템플릿, UI 템플릿 (service 계층, Streamlit / FastAPI, run.sh·run.cmd·setup.cmd) |
 | harness/playbook/ | 단계별 절차 (00_flow ~ 08_closing_and_review_prep) |

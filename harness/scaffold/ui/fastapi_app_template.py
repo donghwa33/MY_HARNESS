@@ -2,7 +2,7 @@
 
 복사: cp harness/scaffold/ui/fastapi_app_template.py ui/server.py
       cp -r harness/scaffold/ui/static ui/static
-실행: python -m uvicorn ui.server:app --host 0.0.0.0 --port 8000
+실행: python -m uvicorn ui.server:app --host ${HOST:-0.0.0.0} --port 8000   (혼자 쓰는 로컬은 HOST=127.0.0.1)
 확인: 브라우저(또는 미리보기 도구)에서 포트 8000, 경로 /
 원칙: 계산은 src/analyze.py 가 한다. 이 서버는 outputs/ 의 결과를 전달만 한다.
 """

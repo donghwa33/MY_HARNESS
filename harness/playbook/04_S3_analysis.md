@@ -45,12 +45,14 @@ decompose() 를 추가하라. 전체 변화 = 측정 효과 + 주요인 효과 +
 ```
 ## 7. UI (요구사항·AGREEMENT 에 화면·도구가 있을 때)
 ```
-harness/scaffold/ui/streamlit_app_template.py 를 ui/app.py 로 복사하고 SECTIONS 를 outputs/ 의 실제 표·그림 이름에 맞춰라.
-UI 에서 계산하지 마라. tests/test_ui_smoke.py 를 smoke_test_template.py 로 만들어 실행하라.
+harness/scaffold/ui/ 의 service_template.py 를 src/service.py 로, streamlit_app_template.py 를 ui/app.py 로, run.sh 를 ui/run.sh 로 복사하라.
+app.py 의 REQUIRED_COLS, CONFIG_PATH, run_core(core 함수 호출), SUMMARY_TABLE, RESULT_SECTIONS 를 채워라. 화면에서 계산하지 마라.
+smoke_test_template.py 로 tests/test_ui_smoke.py 를 만들어 실행하고 멈춰라.
 ```
-- API·특정 동작이 필요하면 fastapi_app_template.py + static/ 사용.
-- 서버(터미널 T3): `streamlit run ui/app.py --server.address 0.0.0.0 --server.port 8501 --server.headless true`
-- 안 열리면: 터미널 오류 → 실제 포트 → 0.0.0.0 → 경로 순서로 점검.
+- 서버(T3): `bash ui/run.sh` (기본 0.0.0.0:8501, 혼자 쓰는 로컬은 `HOST=127.0.0.1 bash ui/run.sh`)
+- 사용자 Windows PC 에 넘길 때: run.cmd, setup.cmd 를 ui/ 로 복사하고 루트에 requirements.txt 를 둔다.
+- API·특정 동작이 필요하면 fastapi_app_template.py + static/.
+- 안 열리면: 터미널 오류 → 실제 포트 → 바인딩 주소 → 경로 순서로 점검.
 
 ## 8. 정리
 ```

@@ -34,8 +34,10 @@ async function show(name, btn) {
   document.querySelectorAll(".tabs button").forEach(b => b.classList.toggle("active", b === btn));
   const r = await fetch(`/api/tables/${name}`); const d = await r.json();
   const t = document.getElementById("tbl");
-  t.innerHTML = "<tr>" + d.columns.map(c => `<th>${c}</th>`).join("") + "</tr>" +
-    d.rows.map(row => "<tr>" + row.map(v => `<td>${v ?? ""}</td>`).join("") + "</tr>").join("");
+  t.replaceChildren();
+  const head = t.insertRow();
+  d.columns.forEach(c => { const th = document.createElement("th"); th.textContent = c; head.appendChild(th); });
+  d.rows.forEach(row => { const tr = t.insertRow(); row.forEach(v => { tr.insertCell().textContent = v ?? ""; }); });
   document.getElementById("src").textContent = "출처: " + d.source;
   const img = document.getElementById("fig");
   if (FIG_FOR[name]) { img.src = `/api/figures/${FIG_FOR[name]}`; img.hidden = false; img.onerror = () => img.hidden = true; }

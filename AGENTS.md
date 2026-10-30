@@ -46,7 +46,8 @@ S0 셋업 → S1 합의 → S2 정제 → S3 분석 → S4 검증 → S5 산출.
 - push 는 요청받을 때만 한다. reset --hard, rebase, amend 로 이력을 바꾸지 않는다.
 
 ## 11. UI
-- UI 는 분석 코어의 결과를 표시하고, 계산은 코어에서 한다. 서버는 0.0.0.0 에 바인딩하고 포트를 알린다.
+- 구조는 core(계산) ← service(검증·실행·저장) ← ui(표시). 템플릿: harness/scaffold/ui/
+- 서버는 미리보기·컨테이너 환경에서 0.0.0.0, 사용자 PC 실행용으로는 127.0.0.1 에 바인딩하고 주소와 포트를 알린다.
 
 ## 12. 스킬과 인계
 - 스킬: interview, decision-log, stratify-analysis, redteam, handoff, explain-pack (harness/skills/, `$이름`)
