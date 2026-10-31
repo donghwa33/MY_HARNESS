@@ -1,7 +1,7 @@
 # AGENTS.md
 
 ## 1. 시작
-- 첫 응답 첫 줄에 `[harness loaded]` 를 쓴다. work/HANDOFF.md(있으면), work/STATE.md 를 읽고 를 읽고 현재 단계와 다음 행동을 한 줄로 요약한 뒤 지시를 기다린다.
+- 첫 응답 첫 줄에 `[harness loaded]` 를 쓴다. work/HANDOFF.md(있으면), work/STATE.md 를 읽고 현재 단계와 다음 행동을 한 줄로 요약한 뒤 지시를 기다린다.
 - 작업 공간의 README·요구사항 문서가 이 파일보다 우선한다.
 
 ## 2. 역할과 범위
