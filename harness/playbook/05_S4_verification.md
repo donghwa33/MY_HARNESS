@@ -11,7 +11,7 @@
 ```
 너는 이 프로젝트의 이전 대화를 모르는 독립 검토자다. AGENTS.md 와 harness/skills/redteam/SKILL.md 를 따른다.
 읽을 파일: README, work/AGREEMENT.md, work/DECISIONS.md, work/FINDINGS.md, src/, outputs/tables/. 코드를 수정하지 마라.
-1. 결론 "<핵심 결론 한 문장>" 을 깨뜨릴 대안 가설 3개와 반증 방법.
+1. 결론 "<핵심 결론 한 문장>" 을 깨뜨릴 대안 가설과 반증 방법. 지적마다 맞으면 결론이나 조치가 바뀌는지(예/아니오)를 적어라.
 2. 결과를 왜곡할 버그 (필터 순서, 조인 손실, 날짜 경계, 집계 단위, 보정 이중 적용, UI 재계산).
 3. 요구사항과 성공 기준 판정.
 결과는 work/REVIEW.md 에 R-번호로.
